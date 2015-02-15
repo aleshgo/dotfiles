@@ -72,6 +72,8 @@ nnoremap <leader>f :NERDTreeFind<CR>
 " gundo
 nnoremap <Leader>u :GundoToggle<CR>
 
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 
 " ============================================================================
