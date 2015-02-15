@@ -194,3 +194,9 @@ let NERDTreeIgnore=['\.pyc$', '\.pyo$']
 
 " vim-better-whitespace
 au VimEnter * ToggleStripWhitespaceOnSave
+
+" vim-indent-guides
+au VimEnter * IndentGuidesEnable
+
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=grey
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
