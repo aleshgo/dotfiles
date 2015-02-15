@@ -16,7 +16,7 @@ Plugin 'vim-airline'
 Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-bufferline'
-Bundle 'ntpeters/vim-better-whitespace'
+Plugin 'ntpeters/vim-better-whitespace'
 
 
 call vundle#ens()
