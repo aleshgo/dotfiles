@@ -17,6 +17,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-bufferline'
 Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 
 call vundle#end()
