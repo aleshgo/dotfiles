@@ -90,7 +90,7 @@ set autowrite
 "autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 "au InsertLeave * match ExtraWhitespace /\s\+$/
 "set list
-"set listchars=tab:➪ 
+"set listchars=tab:➪
 
 
 " Enable syntax highlighting
@@ -126,10 +126,11 @@ set noswapfile
 " python settings
 autocmd FileType python setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
-" ruby settions                                                               
-autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 
+" ruby settings
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
-
+" markdown settings
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 
 " ============================================================================
@@ -169,5 +170,5 @@ set wildignore+=*.pyc
 set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 
-" NERDTree 
+" NERDTree
 let NERDTreeIgnore=['\.pyc$', '\.pyo$']
