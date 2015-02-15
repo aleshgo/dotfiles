@@ -8,6 +8,8 @@ alias ls="ls -lh --color=auto"
 alias t='todo.sh'
 alias v='vim'
 alias g='git'
+alias a='aptitude'
+alias grep='ack-grep'
 
 
 # some command + grc
