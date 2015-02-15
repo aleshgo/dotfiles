@@ -191,3 +191,6 @@ set wildignore+=*/coverage/*
 
 " NERDTree
 let NERDTreeIgnore=['\.pyc$', '\.pyo$']
+
+" vim-better-whitespace
+au VimEnter * ToggleStripWhitespaceOnSave
