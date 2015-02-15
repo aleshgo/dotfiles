@@ -1,0 +1,171 @@
+
+" ============================================================================
+" Bundle
+" ============================================================================
+
+set nocompatible " be iMproved, required
+filetype off	 " required
+
+set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim' 
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-airline'
+Plugin 'sjl/gundo.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-bufferline'
+
+
+call vundle#end()
+
+
+" ============================================================================
+" bind key
+" ============================================================================
+
+" Rebind <Leader> key
+let mapleader = ","
+
+" Quit window on <leader>q
+nnoremap <leader>q :q<CR>
+
+" bind Ctrl+<movement> keys to move around the windows
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+
+" easier moving between tabs
+map <Leader>n <esc>:tabprevious<CR>
+map <Leader>m <esc>:tabnext<CR>
+
+
+" easier moving of code blocks
+vnoremap < <gv  " better indentation
+vnoremap > >gv  " better indentation
+
+
+" NERDTree on <leader>t and <leader>f
+nnoremap <leader>t :NERDTree<CR>
+nnoremap <leader>f :NERDTreeFind<CR>
+
+" gundo
+nnoremap <Leader>u :GundoToggle<CR>
+
+
+
+" ============================================================================
+" Settings
+" ============================================================================
+
+" Color scheme
+" http://www.vim.org/scripts/download_script.php?src_id=13400
+set t_Co=256
+color wombat256mod
+
+
+" Automatic reloading of .vimrc
+autocmd! bufwritepost .vimrc source %
+
+" utf-8 default encoding
+set enc=utf-8
+
+" prefer unix over windows over os9 formats
+set fileformats=unix,dos,mac
+
+" Tab Settings
+set tabstop=4
+set shiftwidth=4
+
+" auto
+set autoread
+set autowrite
+
+" Show whitespace
+"autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+"au InsertLeave * match ExtraWhitespace /\s\+$/
+"set list
+"set listchars=tab:➪ 
+
+
+" Enable syntax highlighting
+filetype off
+filetype plugin indent on
+syntax on
+
+" Showing line numbers and length
+set number  " show line numbers
+set tw=79   " width of document (used by gd)
+set nowrap  " don't automatically wrap on load
+set fo-=t   " don't automatically wrap text when typing
+set colorcolumn=80
+highlight ColorColumn ctermbg=233
+
+
+" split management
+nnoremap <leader>w <C-w>v<C-w>l
+nnoremap <leader>W <C-w>s
+nnoremap <leader>s :new<CR>
+
+" Search
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" Backup
+set nobackup
+set nowritebackup
+set noswapfile
+
+" python settings
+autocmd FileType python setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+
+" ruby settions                                                               
+autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2 
+
+
+
+
+" ============================================================================
+" Plugin setup
+" ============================================================================
+
+
+" Airline
+set laststatus=2
+
+let g:airline_theme='badwolf'
+
+if !exists('g:airline_symbols')
+	let g:airline_symbols = {}
+endif
+
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.branch = '⎇ '
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.whitespace = 'Ξ'
+
+
+" Ctrlp
+let g:ctrlp_max_height = 30
+let g:ctrlp_map = '<Leader>o'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_match_window = 'bottom,order:top,min:1,max:20'
+set wildignore+=*.pyc
+set wildignore+=*_build/*
+set wildignore+=*/coverage/*
+
+" NERDTree 
+let NERDTreeIgnore=['\.pyc$', '\.pyo$']
