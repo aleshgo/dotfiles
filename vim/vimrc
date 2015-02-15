@@ -65,13 +65,13 @@ nnoremap <Leader>u :GundoToggle<CR>
 
 " Color scheme
 " http://www.vim.org/scripts/download_script.php?src_id=13400
-" set t_Co=256
 " color wombat256mod
 
+set t_Co=256
+let g:solarized_termcolors=256
 syntax enable
-set background=dark
 colorscheme solarized
-
+set background=dark
 
 
 " Automatic reloading of .vimrc
