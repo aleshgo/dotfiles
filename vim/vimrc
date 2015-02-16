@@ -29,6 +29,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
+Plugin 'tpope/vim-cucumber'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
