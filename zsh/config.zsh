@@ -23,7 +23,7 @@ setopt INC_APPEND_HISTORY
 
 umask 022
 
-bindkey -v
-export KEYTIMEOUT=1
+#bindkey -v
+#export KEYTIMEOUT=1
 
-todo.sh list
+#todo.sh list
