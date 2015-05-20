@@ -12,11 +12,11 @@ export HISTFILE=~/.zsh_history
 export PATH="$HOME/bin:$PATH"
 
 # for access to the rbenv command-line utility
-export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="$HOME/.rbenv/bin:$PATH"
 
 
 # rbenv enable shims and autocompletion
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 
 setopt INC_APPEND_HISTORY
