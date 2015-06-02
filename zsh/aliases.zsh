@@ -2,15 +2,14 @@
 alias df="df -h"
 alias du="du -h"
 alias rmrf="rm -rf"
-alias grep="grep --color=auto"
 alias lsa="ls -alh"
 alias ls="ls -lh --color=auto"
 alias t='todo.sh'
 alias v='vim'
 alias g='git'
 alias a='aptitude'
-alias grep='ack-grep'
-
+alias grep='ack'
+alias tmux='TERM=xterm-256color tmux'
 
 # some command + grc
 [[ -f /usr/bin/grc ]] && {
