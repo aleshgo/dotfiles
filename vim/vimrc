@@ -32,6 +32,8 @@ Plugin 'xolox/vim-easytags'
 Plugin 'tpope/vim-cucumber'
 Plugin 'freitass/todo.txt-vim'
 Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'ngmy/vim-rubocop'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
