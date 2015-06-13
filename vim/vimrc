@@ -31,6 +31,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'tpope/vim-cucumber'
 Plugin 'freitass/todo.txt-vim'
+Plugin 'jistr/vim-nerdtree-tabs'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
@@ -38,7 +39,6 @@ Plugin 'w0ng/vim-hybrid'
 Plugin 'whatyouhide/vim-gotham'
 
 call vundle#end()
-
 
 " ============================================================================
 " bind key
@@ -56,27 +56,23 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-
 " easier moving between tabs
 map <Leader>n <esc>:tabprevious<CR>
 map <Leader>m <esc>:tabnext<CR>
-
 
 " easier moving of code blocks
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
-
-" NERDTree on <leader>t and <leader>f
-nnoremap <leader>t :NERDTree<CR>
-nnoremap <leader>f :NERDTreeFind<CR>
+" NERDTree 
+"nnoremap <leader>t :NERDTreeToggle<CR>
+map <Leader>t <plug>NERDTreeTabsToggle<CR>
 
 " gundo
 nnoremap <Leader>u :GundoToggle<CR>
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
-
 
 " ============================================================================
 " Settings
@@ -102,8 +98,10 @@ set enc=utf-8
 set fileformats=unix,dos,mac
 
 " Tab Settings
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 
 " auto
 set autoread
@@ -114,7 +112,6 @@ set autowrite
 "au InsertLeave * match ExtraWhitespace /\s\+$/
 "set list
 "set listchars=tab:➪
-
 
 " Enable syntax highlighting
 filetype off
@@ -128,7 +125,6 @@ set nowrap  " don't automatically wrap on load
 set fo-=t   " don't automatically wrap text when typing
 set colorcolumn=80
 highlight ColorColumn ctermbg=233
-
 
 " split management
 nnoremap <leader>w <C-w>v<C-w>l
@@ -155,11 +151,9 @@ autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 " markdown settings
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
-
 " ============================================================================
 " Plugin setup
 " ============================================================================
-
 
 " Airline
 set laststatus=2
@@ -182,7 +176,6 @@ let g:airline_symbols.paste = 'ρ'
 let g:airline_symbols.paste = 'Þ'
 let g:airline_symbols.paste = '∥'
 let g:airline_symbols.whitespace = 'Ξ'
-
 
 " Ctrlp
 let g:ctrlp_max_height = 30
