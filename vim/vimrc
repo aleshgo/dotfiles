@@ -108,9 +108,9 @@ set autoread
 set autowrite
 
 " Show whitespace
-"autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-"au InsertLeave * match ExtraWhitespace /\s\+$/
-"set list
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+au InsertLeave * match ExtraWhitespace /\s\+$/
+set list
 "set listchars=tab:➪
 
 " Enable syntax highlighting
@@ -195,5 +195,5 @@ au VimEnter * ToggleStripWhitespaceOnSave
 " vim-indent-guides
 au VimEnter * IndentGuidesEnable
 
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=grey
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=grey
+"autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
