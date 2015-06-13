@@ -11,7 +11,7 @@ zstyle ':vcs_info:*' unstagedstr "${fg_brown}?${fg_red}"
 setopt prompt_subst
 precmd() { vcs_info }
 
-PROMPT="[$(print '${fg_lblue}%m@%n${vcs_info_msg_0_}${at_normal}')]>> "
+PROMPT="[$(print '${fg_green}%m@%n${vcs_info_msg_0_}${at_normal}')]>> "
 RPROMPT="[%/]"
 
 
