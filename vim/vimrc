@@ -111,7 +111,7 @@ set autowrite
 autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 set list
-"set listchars=tab:➪
+set listchars=tab:➪\ ,eol:¬,space:·
 
 " Enable syntax highlighting
 filetype off
