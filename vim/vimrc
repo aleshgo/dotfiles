@@ -35,6 +35,7 @@ Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'digitaltoad/vim-jade'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
