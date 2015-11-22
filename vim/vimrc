@@ -11,6 +11,8 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline'
 Plugin 'bling/vim-bufferline'
@@ -31,7 +33,6 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-easytags'
 Plugin 'tpope/vim-cucumber'
 Plugin 'freitass/todo.txt-vim'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'kchmck/vim-coffee-script'
@@ -68,7 +69,7 @@ map <Leader>m <esc>:tabnext<CR>
 vnoremap < <gv  " better indentation
 vnoremap > >gv  " better indentation
 
-" NERDTree 
+" NERDTree
 "nnoremap <leader>t :NERDTreeToggle<CR>
 map <Leader>d <plug>NERDTreeTabsToggle<CR>
 
