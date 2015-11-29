@@ -37,6 +37,7 @@ Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-jade'
+Plugin 'skwp/vim-rspec'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
