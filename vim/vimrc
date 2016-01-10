@@ -38,6 +38,7 @@ Plugin 'ngmy/vim-rubocop'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'skwp/vim-rspec'
+Plugin 'easymotion/vim-easymotion'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
