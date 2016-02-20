@@ -39,6 +39,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'skwp/vim-rspec'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'scrooloose/syntastic'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
@@ -200,6 +201,16 @@ let NERDTreeIgnore=['\.pyc$', '\.pyo$']
 
 " vim-better-whitespace
 au VimEnter * ToggleStripWhitespaceOnSave
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " vim-indent-guides
 "au VimEnter * IndentGuidesEnable
