@@ -45,6 +45,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'whatyouhide/vim-gotham'
+Plugin 'vimwiki/vimwiki'
+Plugin 'tbabej/taskwiki'
 
 call vundle#end()
 
@@ -217,6 +219,12 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Vimwiki
+let g:vimwiki_list = [{'path': '$HOME/Mydocs/vimwiki'}]
+
+" Taskwiki
+let g:taskwiki_data_location = '~/Mydocs/.task'
 
 " vim-indent-guides
 "au VimEnter * IndentGuidesEnable
