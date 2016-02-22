@@ -42,6 +42,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'vimwiki/vimwiki'
 Plugin 'tbabej/taskwiki'
+Plugin 'itchyny/calendar.vim'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
