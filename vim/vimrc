@@ -40,13 +40,13 @@ Plugin 'digitaltoad/vim-jade'
 Plugin 'skwp/vim-rspec'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/syntastic'
+Plugin 'vimwiki/vimwiki'
+Plugin 'tbabej/taskwiki'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'whatyouhide/vim-gotham'
-Plugin 'vimwiki/vimwiki'
-Plugin 'tbabej/taskwiki'
 
 call vundle#end()
 
