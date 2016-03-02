@@ -1,6 +1,6 @@
 
 # number of lines kept in history
-export SAVEHIST=10000
+export HISTSIZE=10000
 
 # number of lines saved in the history after logout
 export SAVEHIST=10000
