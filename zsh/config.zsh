@@ -11,7 +11,8 @@ export HISTFILE=~/.zsh_history
 # add my bin directory
 export PATH="$HOME/bin:$PATH"
 
-setopt INC_APPEND_HISTORY
+setopt inc_append_history
+setopt share_history
 
 umask 022
 
