@@ -232,3 +232,6 @@ let g:taskwiki_data_location = '~/Mydocs/.task'
 "au VimEnter * IndentGuidesEnable
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=grey
 "autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
+
+" RustFmt
+let g:rustfmt_autosave = 1
