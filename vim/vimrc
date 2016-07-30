@@ -43,6 +43,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'vimwiki/vimwiki'
 Plugin 'tbabej/taskwiki'
 Plugin 'itchyny/calendar.vim'
+Plugin 'rust-lang/rust.vim'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
