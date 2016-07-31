@@ -11,6 +11,8 @@ export HISTFILE=~/.zsh_history
 # add my bin directory
 export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
 
+export TERM=xterm
+
 setopt inc_append_history
 setopt share_history
 
