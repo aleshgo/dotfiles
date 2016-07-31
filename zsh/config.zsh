@@ -9,7 +9,7 @@ export SAVEHIST=10000
 export HISTFILE=~/.zsh_history
 
 # add my bin directory
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
 
 setopt inc_append_history
 setopt share_history
