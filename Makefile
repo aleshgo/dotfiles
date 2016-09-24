@@ -1,6 +1,7 @@
 install: install-vim install-zsh
 
 install-vim:
+	mkdir ~/.vimundo
 	rm -rf ~/.vim ~/.vimrc
 	ln -s `pwd`/vim ~/.vim
 	ln -s ~/.vim/vimrc ~/.vimrc
