@@ -159,7 +159,7 @@ autocmd FileType python setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType ruby setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
 
 " elm settings
-autocmd FileType ruby setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
+autocmd FileType elm setlocal expandtab shiftwidth=4 tabstop=4 softtabstop=4
 
 " markdown settings
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
