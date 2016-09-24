@@ -39,6 +39,7 @@ Plugin 'skwp/vim-rspec'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'rust-lang/rust.vim'
+Plugin 'elmcast/elm-vim'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
@@ -224,3 +225,6 @@ let g:syntastic_check_on_wq = 0
 
 " RustFmt
 let g:rustfmt_autosave = 1
+
+" Elm
+let g:elm_format_autosave = 1
