@@ -42,6 +42,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'elmcast/elm-vim'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'neovimhaskell/haskell-vim'
+Plugin 'alx741/vim-hindent' " Dont forget:  stack install hindent
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
@@ -240,3 +241,8 @@ let g:rustfmt_autosave = 1
 
 " Elm
 let g:elm_format_autosave = 1
+
+" Haskell
+let g:hindent_on_save = 1
+let g:hindent_indent_size = 2
+let g:hindent_line_length = 80
