@@ -8,8 +8,8 @@ export SAVEHIST=10000
 # location of history
 export HISTFILE=~/.zsh_history
 
-# add my bin directory
-export PATH="$HOME/.cargo/bin:$HOME/bin:$PATH"
+# modify path
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/bin:$PATH"
 
 export TERM=xterm
 
