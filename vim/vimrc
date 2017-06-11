@@ -41,6 +41,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'rust-lang/rust.vim'
 Plugin 'elmcast/elm-vim'
 Plugin 'aklt/plantuml-syntax'
+Plugin 'neovimhaskell/haskell-vim'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
