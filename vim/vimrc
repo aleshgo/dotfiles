@@ -44,6 +44,8 @@ Plugin 'aklt/plantuml-syntax'
 Plugin 'neovimhaskell/haskell-vim'
 Plugin 'alx741/vim-hindent' " Dont forget:  stack install hindent
 Plugin 'justinmk/vim-sneak'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'rhysd/vim-clang-format'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
@@ -251,3 +253,6 @@ let g:hindent_line_length = 80
 
 " vim-sneak
 let g:sneak#label = 1
+
+" clang-format
+autocmd FileType c,cpp ClangFormatAutoEnable
