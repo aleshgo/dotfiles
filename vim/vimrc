@@ -46,6 +46,10 @@ Plugin 'alx741/vim-hindent' " Dont forget:  stack install hindent
 Plugin 'justinmk/vim-sneak'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'google/vim-maktaba'
+Plugin 'bazelbuild/vim-bazel'
+Plugin 'dbgx/lldb.nvim'
+Plugin 'ryanoasis/vim-devicons' " yaourt -S nerd-fonts-complete
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
@@ -256,3 +260,7 @@ let g:sneak#label = 1
 
 " clang-format
 autocmd FileType c,cpp ClangFormatAutoEnable
+
+" vim-devicons
+set encoding=utf-8
+let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
