@@ -50,6 +50,7 @@ Plugin 'google/vim-maktaba'
 Plugin 'bazelbuild/vim-bazel'
 Plugin 'dbgx/lldb.nvim'
 Plugin 'ryanoasis/vim-devicons' " yaourt -S nerd-fonts-complete
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
@@ -224,7 +225,12 @@ set wildignore+=*_build/*
 set wildignore+=*/coverage/*
 
 " NERDTree
-let NERDTreeIgnore=['\.pyc$', '\.pyo$']
+let NERDTreeIgnore=['\.pyc$', '\.pyo$', '^bazel-']
+let NERDTreeDirArrowExpandable = '+'
+let NERDTreeDirArrowCollapsible = '~'
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeMinimalUI = 1
+" let NERDTreeQuitOnOpen = 1
 
 " vim-better-whitespace
 au VimEnter * ToggleStripWhitespaceOnSave
@@ -264,3 +270,12 @@ autocmd FileType c,cpp ClangFormatAutoEnable
 " vim-devicons
 set encoding=utf-8
 let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ' '
+let g:DevIconsDefaultFolderOpenSymbol = ' '
+
+" vim-nerdtree-syntax-highlight
+let g:NERDTreeHighlightCursorline = 0
+let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
+" let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
