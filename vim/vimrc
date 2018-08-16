@@ -50,8 +50,8 @@ Plugin 'google/vim-maktaba'
 Plugin 'bazelbuild/vim-bazel'
 Plugin 'dbgx/lldb.nvim'
 Plugin 'purescript-contrib/purescript-vim'
-Plugin 'ryanoasis/vim-devicons' " yaourt -S nerd-fonts-complete
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plugin 'ryanoasis/vim-devicons' " yaourt -S nerd-fonts-complete
+"Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
