@@ -47,8 +47,7 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'google/vim-maktaba'
-Plugin 'bazelbuild/vim-bazel'Plugin 'purescript-contrib/purescript-vim'
-
+Plugin 'bazelbuild/vim-bazel'
 Plugin 'dbgx/lldb.nvim'
 Plugin 'purescript-contrib/purescript-vim'
 Plugin 'ryanoasis/vim-devicons' " yaourt -S nerd-fonts-complete
