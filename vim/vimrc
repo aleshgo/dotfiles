@@ -47,8 +47,10 @@ Plugin 'justinmk/vim-sneak'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'google/vim-maktaba'
-Plugin 'bazelbuild/vim-bazel'
+Plugin 'bazelbuild/vim-bazel'Plugin 'purescript-contrib/purescript-vim'
+
 Plugin 'dbgx/lldb.nvim'
+Plugin 'purescript-contrib/purescript-vim'
 Plugin 'ryanoasis/vim-devicons' " yaourt -S nerd-fonts-complete
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 
@@ -130,7 +132,8 @@ set autoread
 set autowrite
 
 " Show whitespace
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitesPlugin 'purescript-contrib/purescript-vim'
+pace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 set list
 set listchars=tab:➪\ ,eol:¬,space:·
