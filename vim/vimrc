@@ -53,6 +53,7 @@ Plugin 'purescript-contrib/purescript-vim'
 "Plugin 'ryanoasis/vim-devicons' " yaourt -S nerd-fonts-complete
 "Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'purescript-contrib/purescript-vim'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
@@ -265,6 +266,11 @@ let g:elm_format_autosave = 1
 let g:hindent_on_save = 1
 let g:hindent_indent_size = 2
 let g:hindent_line_length = 80
+
+" PureScript
+syntax on
+filetype on
+filetype plugin indent on
 
 " vim-sneak
 let g:sneak#label = 1
