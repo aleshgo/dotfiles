@@ -52,6 +52,7 @@ Plugin 'dbgx/lldb.nvim'
 Plugin 'purescript-contrib/purescript-vim'
 "Plugin 'ryanoasis/vim-devicons' " yaourt -S nerd-fonts-complete
 "Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 " Themes
 Plugin 'altercation/vim-colors-solarized'
