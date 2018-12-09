@@ -7,8 +7,14 @@ alias ls="ls -lh --color=auto"
 alias t='todo.sh'
 alias v='vim'
 alias g='git'
+alias s='stack'
+alias sb='stack build'
+alias se='stack exec'
+alias sbe='stack build && stack exec'
+alias sys='systemctl'
+alias jctl='journalctl'
 alias a='aptitude'
-alias grep='ack'
+alias grep='rg'
 alias tmux='TERM=xterm-256color tmux'
 
 # some command + grc
