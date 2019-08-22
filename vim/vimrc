@@ -133,8 +133,7 @@ set autoread
 set autowrite
 
 " Show whitespace
-autocmd ColorScheme * highlight ExtraWhitesPlugin 'purescript-contrib/purescript-vim'
-pace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 set list
 set listchars=tab:➪\ ,eol:¬,space:·
